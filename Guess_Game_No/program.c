@@ -35,4 +35,6 @@ int main()
     }
     printf("\n-- User Score-- |-- Computer Score --|");
     printf("\n       %d       |          %d",count,count1);
+    printf("\n       %d       |          %d",count,count1);
+    printf("\n       %d       |          %d",count,count1);
 }
