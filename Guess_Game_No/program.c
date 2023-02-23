@@ -1,40 +1,37 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 void number();
-
 
 int main()
 
 {
-    int n,us;
+    int n, us;
     int comp_nu;
-    int count=0,count1=0;
+    int count = 0, count1 = 0;
 
-    printf("\nEnter Limit of Guessing :  ");
-    scanf("%d",&n);
-    for(int i=1;i<=n;i++)
+    printf("\nEnter Limit of Guessing (Max 3 Chances):  ");
+    scanf("%d", &n);
+    for (int i = 1; i <= 3; i++)
     {
         printf("\nEnter User's Number : ");
-        scanf("%d",&us);
+        scanf("%d", &us);
 
-        comp_nu=rand()%100 +1;
+        comp_nu = rand() % 100 + 1;
 
-        printf("\nComputer's Selected Number --> %d",comp_nu);
+        printf("\nComputer's Selected Number --> %d", comp_nu);
 
-        if(us==comp_nu)
+        if (us == comp_nu)
         {
             printf("\n|---User Win---|");
-            count+=1;
+            count += 1;
         }
-        else{
+        else
+        {
             printf("\n|---Computer Win---|");
-            count1+=1;
+            count1 += 1;
         }
 
-
+        printf("\n\n-- User Score-- |-- Computer Score --|");
+        printf("\n       %d       |          %d", count, count1);
     }
-    printf("\n-- User Score-- |-- Computer Score --|");
-    printf("\n       %d       |          %d",count,count1);
-    printf("\n       %d       |          %d",count,count1);
-    printf("\n       %d       |          %d",count,count1);
 }
