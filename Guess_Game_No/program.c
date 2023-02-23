@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 int main()
 
 {
@@ -32,6 +31,6 @@ int main()
         }
 
         printf("\n\n-- User Score-- |-- Computer Score --|");
-        printf("\n       %d       |          %d", count, count1);
+        printf("\n       %d         |          %d", count, count1);
     }
 }
