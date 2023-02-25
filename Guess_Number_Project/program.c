@@ -32,5 +32,18 @@ int main()
 
         printf("\n\n-- User Score-- |-- Computer Score --|");
         printf("\n       %d         |          %d", count, count1);
+
+        if(count1>count)
+        {
+            printf("\nComputer Wins the Game");
+        }
+        else if(count>count1)
+        {
+            printf("\nUser Wins the Match");
+        }
+        else
+        {
+            printf("\nGame Tie");
+        }
     }
 }
