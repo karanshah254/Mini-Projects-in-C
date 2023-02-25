@@ -10,7 +10,7 @@ int main()
 
     printf("\nEnter Limit of Guessing (Max 3 Chances):  ");
     scanf("%d", &n);
-    for (int i = 1; i <= 3; i++)
+    for (int i = 1; i <= n; i++)
     {
         printf("\nEnter User's Number : ");
         scanf("%d", &us);
@@ -31,19 +31,20 @@ int main()
         }
 
         printf("\n\n-- User Score-- |-- Computer Score --|");
-        printf("\n       %d         |          %d", count, count1);
+        printf("\n        %d        |          %d", count, count1);
+    }
+    printf("\n");
 
-        if(count1>count)
-        {
-            printf("\nComputer Wins the Game");
-        }
-        else if(count>count1)
-        {
-            printf("\nUser Wins the Match");
-        }
-        else
-        {
-            printf("\nGame Tie");
-        }
+    if (count1 > count)
+    {
+        printf("\n\tComputer Wins the Game");
+    }
+    else if (count > count1)
+    {
+        printf("\n\tUser Wins the Match");
+    }
+    else
+    {
+        printf("\n\t\tGame Tie");
     }
 }
