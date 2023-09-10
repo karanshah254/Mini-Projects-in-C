@@ -4,7 +4,7 @@
 
 int main()
 {
-    char choices[] = {'R', 'P', 'S'}; // R for Rock, P for Paper, S for Scissors
+    char choices[] = {'R', 'P', 'S'};
     char playerChoice, computerChoice;
     int playerIndex, computerIndex;
 
@@ -14,12 +14,10 @@ int main()
     printf("Enter your choice (R for Rock, P for Paper, S for Scissors): ");
     scanf(" %c", &playerChoice);
 
-
-    // Validate player's choice
     if (playerChoice != 'R' && playerChoice != 'P' && playerChoice != 'S')
     {
         printf("Invalid choice. Please choose R, P, or S.\n");
-        return 1; // Exit with error code
+        return 1;
     }
 
     computerIndex = rand() % 3;
@@ -29,6 +27,7 @@ int main()
     printf("Computer's choice: %c\n", computerChoice);
 
     if (playerChoice == computerChoice)
+
     {
         printf("It's a tie!\n");
     }
