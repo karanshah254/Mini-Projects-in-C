@@ -1,3 +1,9 @@
+/*
+
+Let is say source is tower A destination is tower C and auxilary/helping is tower B
+Move disk one by one in the same order and final to tower C / destination, the same way in which firts A was .
+
+*/
 #include <stdio.h>
 
 // Function to move a disk from source peg to destination peg
