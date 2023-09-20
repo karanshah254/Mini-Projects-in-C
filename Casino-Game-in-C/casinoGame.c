@@ -87,7 +87,6 @@ int round1()
         printf("\nThe Correct Numeber is ---- %d", computer1);
 
         new_Lose = deposit1 - bet1;
-
         printf("\nNow your current balance is --- %d", new_Lose);
 
         if (new_Lose == 0)
